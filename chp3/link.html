@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>python160</title>
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<link rel="pingback" href="https://python160.wordpress.com/xmlrpc.php">
+
+<link rel='dns-prefetch' href='//s2.wp.com' />
+<link rel='dns-prefetch' href='//s0.wp.com' />
+<link rel='dns-prefetch' href='//s1.wp.com' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="python160 &raquo; Feed" href="https://python160.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="python160 &raquo; Comments Feed" href="https://python160.wordpress.com/comments/feed/" />
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		function addLoadEvent(func) {
+			var oldonload = window.onload;
+			if (typeof window.onload != 'function') {
+				window.onload = func;
+			} else {
+				window.onload = function () {
+					oldonload();
+					func();
+				}
+			}
+		}
+		/* ]]> */
+	</script>
+			<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s0.wp.com\/wp-content\/mu-plugins\/wpcom-smileys\/twemoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/s0.wp.com\/wp-includes\/js\/wp-emoji-release.min.js?m=1488818651h&ver=4.7.3"}};
+			!function(a,b,c){function d(a){var b,c,d,e,f=String.fromCharCode;if(!k||!k.fillText)return!1;switch(k.clearRect(0,0,j.width,j.height),k.textBaseline="top",k.font="600 32px Arial",a){case"flag":return k.fillText(f(55356,56826,55356,56819),0,0),!(j.toDataURL().length<3e3)&&(k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,65039,8205,55356,57096),0,0),b=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55356,57331,55356,57096),0,0),c=j.toDataURL(),b!==c);case"emoji4":return k.fillText(f(55357,56425,55356,57341,8205,55357,56507),0,0),d=j.toDataURL(),k.clearRect(0,0,j.width,j.height),k.fillText(f(55357,56425,55356,57341,55357,56507),0,0),e=j.toDataURL(),d!==e}return!1}function e(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i,j=b.createElement("canvas"),k=j.getContext&&j.getContext("2d");for(i=Array("flag","emoji4"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='all-css-0-1' href='https://s1.wp.com/_static/??-eJx9jtEKwjAMRX/IWKZT3IP4LV0NrlvThiVl7O/tJr6I9CXkhns4MQuDS1ExqqEMHPLLRzELu0Qg5AOuP+noRA7mPxb8hGJGVLZugj3V6i7NWO7EVrcG4dNbDEilVsOIr19qW4fiqmo+7/c9zygCZZLPBDoU0c496N60l+7UNt35Nr4B2XZl/A==' type='text/css' media='all' />
+<link rel='stylesheet' id='edin-pt-sans-css'  href='https://fonts.googleapis.com/css?family=PT+Sans%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='edin-pt-serif-css'  href='https://fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%2C400italic%2C700italic&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='edin-pt-mono-css'  href='https://fonts.googleapis.com/css?family=PT+Mono&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-6-1' href='https://s2.wp.com/_static/??-eJyFjl0OwjAMgy9ECWOA4AFxlq1kpahNqv5o4vYEKqQBYrzZyWfZMAalmTJShnxBjwlC6QHPlmCQ+1MJsNQpLWAC+6KCK8ZSAoOE0crjh/zKfhalfHP4l5IdlVRj0Owrb4E418KXmJ/KyrHusmV6M2pwnY1z0Yi9YyPSgFAT+wid/LHZ7Her7aFp19c7KeN/TA==' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-7-1' href='https://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1465851035h' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-8-1' href='https://s0.wp.com/_static/??/wp-content/mu-plugins/actionbar/actionbar.css,/wp-content/themes/h4/global.css?m=1485538130j' type='text/css' media='all' />
+<script type='text/javascript' src='https://s1.wp.com/_static/??-eJyFztEKwjAMBdAfsquTiXsRv6XWOFKXtDbphn69HeiDMBQCgdzDJXZOBtmP5QJiQ517gfx4rybIxv4ChnDITqEh5A/2kRVYF0vxjCOYIpDdUG+16BpXXIqiBCIVraTfLyFPCPNfFkCT8zeTQfC5tJ7o2Hb9Yde3+24bXjRNW9I='></script>
+<link rel='stylesheet' id='all-css-0-2' href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621h' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='https://s1.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563h&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://python160.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://s1.wp.com/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='http://wp.me/6J7Nv' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="python160" />
+<meta property="og:url" content="https://python160.wordpress.com/" />
+<meta property="og:site_name" content="python160" />
+<meta property="og:image" content="https://s0.wp.com/i/blank.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta property="fb:app_id" content="249643311490" />
+<link rel="shortcut icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="https://s2.wp.com/i/favicon.ico" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="https://s0.wp.com/i/webclip.png" />
+<link rel='openid.server' href='https://python160.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='https://python160.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="https://python160.wordpress.com/osd.xml" title="python160" />
+<link rel="search" type="application/opensearchdescription+xml" href="https://s1.wp.com/opensearch.xml" title="WordPress.com" />
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+				<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="python160" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-task" content="name=Subscribe;action-uri=https://python160.wordpress.com/feed/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=https://s2.wp.com/i/favicon.ico" /><meta name="title" content="python160 on WordPress.com" />
+<style type="text/css" id="syntaxhighlighteranchor"></style>
+</head>
+
+<body class="home blog mp6 customizer-styles-applied navigation-default no-header-navigation sidebar-right highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+	<header id="masthead" class="site-header" role="banner">
+		
+		
+		<div class="header-wrapper clear">
+			<div class="site-branding">
+										<h1 class="site-title"><a href="https://python160.wordpress.com/" rel="home">python160</a></h1>
+								</div><!-- .site-branding -->
+
+			
+					</div><!-- .header-wrapper -->
+	</header><!-- #masthead -->
+
+	<div id="content" class="site-content">
+
+	<div class="content-wrapper clear">
+
+		<div id="primary" class="content-area">
+			<main id="main" class="site-main" role="main">
+
+				
+					
+										
+						
+<article id="post-3" class="post-3 post type-post status-publish format-standard hentry category-uncategorized">
+	<header class="entry-header">
+		<h2 class="entry-title"><a href="https://python160.wordpress.com/2016/01/08/python-tips/" rel="bookmark">Python Tips</a></h2>
+				<div class="entry-meta">
+			<span class="posted-on">Posted on <a href="https://python160.wordpress.com/2016/01/08/python-tips/" rel="bookmark"><time class="entry-date published" datetime="2016-01-08T17:14:14+00:00">January 8, 2016</time></a></span><span class="byline"> by <span class="author vcard"><a class="url fn n" href="https://python160.wordpress.com/author/nibinsha/">nibinsha</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	
+	<div class="entry-content">
+		<h1><strong>About Python Language</strong></h1>
+<p>Python is a widely used general-purpose, high-level programming language Its design philosophy emphasizes codereadability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java.</p>
+<p>Python supports multiple programming paradigms, including object-oriented, imperative and functional programming orprocedural styles. It features a dynamic type system and automatic memory management and has a large and comprehensive standard library.</p>
+<p>To Know more about python : <a href="https://www.python.org/">python.org</a></p>
+<h2>Essential Features in Python</h2>
+<p>&nbsp;</p>
+<h4>Today, Python is one of the most popular programming languages in the open source space. It’s a vast language and there are many gems to discover – here are ten tips for new users to get the ball rolling…</h4>
+<div class="entry clearfloat">
+<p>Python is a programming language that lets you work more quickly and integrate your systems more effectively and is one of the most popular programming languages in the open source space. Look around and you will find it running everywhere, from various configuration tools to XML parsing. We’ve compiled ten essential Python tips especially for the new user, so without further ado, let’s get started…<strong><br />
+</strong></p>
+<p><strong>1. Running Python scripts </strong><br />
+On most of the UNIX systems, you can run Python scripts from the command line like so:</p>
+<blockquote><p><strong>$ python mypyprog.py</strong></p></blockquote>
+<p><strong>2. Running Python programs from Python interpreter</strong><br />
+The Python interactive interpreter makes it easy to try your first steps in programming and using all Python commands. You just issue each command at the command prompt, one by one, and the answer is immediate.<br />
+Python interpreter can be started by issuing the command:</p>
+<blockquote><p><strong>$ python<br />
+kunal@ubuntu:~$ python<br />
+Python 2.6.2 (release26-maint, Apr 19 2009, 01:56:41)<br />
+[GCC 4.3.3] on linux2<br />
+Type “help”, “copyright”, “credits” or “license” for more information.<br />
+&gt;&gt;&gt; &lt;type commands here&gt;</strong></p></blockquote>
+<p>In this article, all the code starting at the  &gt;&gt;&gt; symbol is meant to be given at the<br />
+Python prompt. It is also important to remember that Python takes tabs very seriously – so if you are receiving any error that mentions tabs, correct the tab spacing.</p>
+<p><strong>3. Dynamic typing</strong><br />
+In Java, C++, and other statically typed languages, you must specify the data type of the function return value and each function argument. On the other hand, Python is a dynamically typed language. In Python you never have to explicitly specify the data type of anything. Based on what value you assign, Python will keep track of the data type internally.</p>
+<p><strong>4. Python statements</strong><br />
+Python uses carriage returns to separate statements, and a colon and indentation to separate code blocks. Most of the compiled programming languages, such as C and C++, use semicolons to separate statements and curly brackets to separate code blocks.</p>
+<p><strong>5.  == and = operators</strong><br />
+Python uses ‘==’ for comparison and ‘=’ for assignment. Python does not support inline assignment, so there’s no chance of accidentally assigning the value when you actually want to compare it.</p>
+<p><strong>6. Concatenating strings</strong><br />
+You can use ‘+’ to concatenate strings like so:</p>
+<blockquote><p><strong>&gt;&gt;&gt; print ‘kun’+’al’<br />
+kunal</strong></p></blockquote>
+<p><strong>7. The __init__ method </strong><br />
+The __init__ method is run as soon as an object of a class is instantiated. The method is useful to do any initialization you want to do with your object. The __init__ method is analogous to a constructor in C++, C# or Java.</p>
+<blockquote><p><strong><em>[Example]</em><br />
+class Person:<br />
+def __init__(self, name):<br />
+self.name = name<br />
+def sayHi(self):<br />
+print ‘Hello, my name is’, self.name<br />
+p = Person(‘Kunal’)<br />
+p.sayHi()</strong></p></blockquote>
+<blockquote><p><strong><em>[Output]</em><br />
+[~/src/python $:] python initmethod.py<br />
+Hello, my name is Kunal</strong></p></blockquote>
+<p><strong>8. Modules</strong><br />
+To keep your programs manageable as they grow in size, you may want to break them up into several files. Python allows you to put multiple function definitions into a file and use them as a module that can be imported into other scripts and programs. These files must have a .py extension.</p>
+<blockquote><p><strong><em>[Example]</em><br />
+# file my_function.py<br />
+def minmax(a,b):<br />
+if a &lt;= b:<br />
+min, max = a, b<br />
+else:<br />
+min, max = b, a<br />
+return min, max<br />
+Module Usage<br />
+import my_function<br />
+x,y = my_function.minmax(25, 6.3)</strong></p></blockquote>
+<p><strong>9. Module defined names</strong><br />
+The built-in function ‘dir()’ can be used to find out which names a module defines. It returns a sorted list of strings.</p>
+<blockquote><p><strong><em>[Example]</em><br />
+&gt;&gt;&gt; import time<br />
+&gt;&gt;&gt; dir(time)<br />
+[‘__doc__’, ‘__file__’, ‘__name__’, ‘__package__’, ‘accept2dyear’, ‘altzone’, ‘asctime’, ‘clock’, ‘ctime’, ‘daylight’, ‘gmtime’, ‘localtime’, ‘mktime’, ‘sleep’, ‘strftime’, ‘strptime’, ‘struct_time’, ‘time’, ‘timezone’, ‘tzname’, ‘tzset’]</strong></p></blockquote>
+<p><strong>10. Module internal documentation</strong><br />
+You can see the internal documentation (if available) of a module name by looking at  .__doc__.</p>
+<blockquote><p><strong><em>[Example]</em><br />
+&gt;&gt;&gt; import time<br />
+&gt;&gt;&gt; print time.clock.__doc__<br />
+clock() -&gt; floating point number</strong></p></blockquote>
+<p>This example returns the CPU time or real time since the start of the process or since the first call to clock(). This has as much precision as the system records.</p>
+<h3>One of the simplest book for python beginners</h3>
+<p>Try this book Learn python the Hardway:</p>
+<p><a href="http://learnpythonthehardway.org/">learnpythonthehardway.org</a><a href="http://learnpythonthehardway.org/"></a></p>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	</div><!-- .entry-content -->
+
+	<footer class="entry-footer">
+		<span class="comments-link"><a href="https://python160.wordpress.com/2016/01/08/python-tips/#respond">Leave a comment</a></span>	</footer><!-- .entry-footer -->
+</article><!-- #post-## -->
+
+					
+					
+				
+			</main><!-- #main -->
+		</div><!-- #primary -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+		<aside id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://python160.wordpress.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+					<li>
+				<a href="https://python160.wordpress.com/2016/01/08/python-tips/">Python Tips</a>
+						</li>
+				</ul>
+		</aside>		<aside id="recent-comments-2" class="widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2></aside><aside id="archives-2" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+			<li><a href='https://python160.wordpress.com/2016/01/'>January 2016</a></li>
+		</ul>
+		</aside><aside id="categories-2" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+	<li class="cat-item cat-item-1"><a href="https://python160.wordpress.com/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+</aside><aside id="meta-2" class="widget widget_meta"><h2 class="widget-title">Meta</h2>			<ul>
+			<li><a href="https://wordpress.com/start?ref=wplogin">Register</a></li>			<li><a href="https://python160.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="https://python160.wordpress.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://python160.wordpress.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>			</ul>
+			</aside>	</div><!-- #secondary -->
+	
+</div><!-- .content-wrapper -->
+
+	</div><!-- #content -->
+
+	
+
+	<div id="tertiary" class="footer-widget-area" role="complementary">
+		<div class="footer-widget-wrapper clear">
+							<div class="footer-widget">
+					<aside id="search-3" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://python160.wordpress.com/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form></aside>		<aside id="recent-posts-3" class="widget widget_recent_entries">		<h2 class="widget-title">Recent Posts</h2>		<ul>
+					<li>
+				<a href="https://python160.wordpress.com/2016/01/08/python-tips/">Python Tips</a>
+						</li>
+				</ul>
+		</aside>		<aside id="recent-comments-3" class="widget widget_recent_comments"><h2 class="widget-title">Recent Comments</h2></aside><aside id="archives-3" class="widget widget_archive"><h2 class="widget-title">Archives</h2>		<ul>
+			<li><a href='https://python160.wordpress.com/2016/01/'>January 2016</a></li>
+		</ul>
+		</aside><aside id="categories-3" class="widget widget_categories"><h2 class="widget-title">Categories</h2>		<ul>
+	<li class="cat-item cat-item-1"><a href="https://python160.wordpress.com/category/uncategorized/" >Uncategorized</a>
+</li>
+		</ul>
+</aside><aside id="meta-3" class="widget widget_meta"><h2 class="widget-title">Meta</h2>			<ul>
+			<li><a href="https://wordpress.com/start?ref=wplogin">Register</a></li>			<li><a href="https://python160.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="https://python160.wordpress.com/feed/">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://python160.wordpress.com/comments/feed/">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>			</ul>
+			</aside>				</div><!-- .footer-widget -->
+			
+			
+					</div><!-- .footer-widget-wrapper -->
+	</div><!-- #tertiary -->
+
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="footer-wrapper clear">
+			<div class="site-info">
+				<a href="https://wordpress.com/?ref=footer_blog">Blog at WordPress.com.</a>
+				
+							</div><!-- .site-info -->
+					</div><!-- .footer-wrapper -->
+	</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!--  -->
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201710y'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s1.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781h'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+
+			if (typeof Gravatar === "undefined"){
+				return;
+			}
+
+			if ( typeof Gravatar.init !== "function" ) {
+				return;
+			}			
+
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"https:\/\/python160.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"https:\/\/python160.wordpress.com\/wp-login.php?action=logout&_wpnonce=5d2030339f","homeURL":"https:\/\/python160.wordpress.com\/","postID":"3","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0","text_direction":"ltr"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s2.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1479964158j'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screen_reader_text = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var screen_reader_text = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var actionbardata = {"siteID":"99412753","siteName":"python160","siteURL":"http:\/\/python160.wordpress.com","icon":"<img alt='' src='https:\/\/s1.wp.com\/i\/logo\/wpcom-gray-white.png' class='avatar avatar-50' height='50' width='50' \/>","canManageOptions":"","canCustomizeSite":"","isFollowing":"","themeSlug":"pub\/edin","signupURL":"https:\/\/wordpress.com\/start\/","loginURL":"https:\/\/python160.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fpython160.wordpress.com%2F2016%2F01%2F08%2Fpython-tips%2F","themeURL":"https:\/\/wordpress.com\/themes\/edin\/","xhrURL":"https:\/\/python160.wordpress.com\/wp-admin\/admin-ajax.php","nonce":"d657ff6008","isSingular":"","isFolded":"","isLoggedIn":"","isMobile":"","subscribeNonce":"<input type=\"hidden\" id=\"_wpnonce\" name=\"_wpnonce\" value=\"0a15eedb11\" \/>","referer":"https:\/\/python160.wordpress.com\/","canFollow":"1","statusMessage":"","customizeLink":"https:\/\/python160.wordpress.com\/wp-admin\/customize.php?url=https%3A%2F%2Fpython160.wordpress.com%2F","i18n":{"view":"View site","follow":"Follow","following":"Following","edit":"Edit","login":"Log in","signup":"Sign up","customize":"Customize","report":"Report this content","themeInfo":"Get theme: Edin","shortlink":"Copy shortlink","copied":"Copied","followedText":"New posts from this site will now appear in your <a href=\"https:\/\/wordpress.com\/\">Reader<\/a>","foldBar":"Collapse this bar","unfoldBar":"Expand this bar","editSubs":"Manage subscriptions","viewReader":"View site in the Reader","subscribe":"Sign me up","enterEmail":"Enter your email address","followers":"","alreadyUser":"Already have a WordPress.com account? <a href=\"https:\/\/python160.wordpress.com\/wp-login.php?redirect_to=https%3A%2F%2Fpython160.wordpress.com%2F2016%2F01%2F08%2Fpython-tips%2F\">Log in now.<\/a>","stats":"Stats"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://s0.wp.com/_static/??-eJyNjksOwjAMBS9EcCu6oAvEWULitm4TJ+RTOD7JpkKAKlZ+ssejBw8vlOOEnGCOoHElhf55nOMB3k42C2/ySBzB0IIR7hkzTpK1wfAJpwltQXy+AWri6mW50igTOf4Djgt5YYgXMTiVoxjoq8+Przp3aktticVNBrAyJgwlCbdiCKSLaNvtGVTtXw1bKvTVXtru3DdN1576+QV1vXwu'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script>	<script type="text/javascript">
+	var skimlinks_pub_id = "725X584219"
+	var skimlinks_sitename = "python160.wordpress.com";
+	</script>
+	<script type="text/javascript" defer src="https://s.skimresources.com/js/725X1342.skimlinks.js"></script>		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({
+				c1: "2",
+				c2: "7518284"
+			});
+			(function() {
+				var s = document.createElement("script"),
+					el = document.getElementsByTagName("script")[0];
+				s.defer = true;
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			<p class="robots-nocontent"><img src="https://sb.scorecardresearch.com/p?c1=2&c2=7518284&c3=&c4=&c5=&c6=&c15=&cv=2.0&cj=1" alt="" style="display:none;" width="1" height="1" /></p>
+		</noscript><script src="//stats.wp.com/w.js?56" type="text/javascript" async defer></script>
+<script type="text/javascript">
+_tkq = window._tkq || [];
+_stq = window._stq || [];
+_tkq.push(['storeContext', {'blog_id':'99412753','blog_tz':'0','user_lang':'en','blog_lang':'en','user_id':'0'}]);
+_stq.push(['view', {'blog':'99412753','v':'wpcom','tz':'0','user_id':'0','subd':'python160'}]);
+_stq.push(['extra', {'crypt':'UE40eW5QN0p8M2Y/RE1LVmwrVi5vQS5fVFtfdHBbPyw1VXIrU3hWLHhzVndTdktBX0ddJnpXRjVaOTd6fj1YMX4ydzR6MmRCYnxkNmd4TzJfUn5+dWpkdkhNbVkrNHFINmd6dlF5Wkdva2hYVT0zZiVJdzZwQzVoUzFsQX5MRTdTdz1KSVJwbXI9LTByaEY3ZmtYWE8xdVFVRHIucWZ1cE9DNjhQRTVteFY0Q21NVWxEeWN2RVhYQmo0RyttSGVySWVqUEJmUiV0diZba2RuZWpBekRbeT0lSUw2MD8mW0pfYnx0M3puZmNxdUVuRHJqQiZqNW54VXxadktvQiUtMVdiNU1yJTM/Pw=='}]);
+_stq.push([ 'clickTrackerInit', '99412753', '0' ]);
+	</script>
+<noscript><img src="https://pixel.wp.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//pixel.wp.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>
+<!--
+	generated 34 seconds ago
+	generated in 0.060 seconds
+	served from batcache in 0.001 seconds
+	expires in 266 seconds
+-->
